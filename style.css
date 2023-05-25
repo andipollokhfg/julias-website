@@ -1,0 +1,140 @@
+html {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.onlymargin {
+    margin-top: 40px;
+    margin-bottom: 140px;
+    margin-left: 240px;
+    margin-right: 240px;
+}
+
+nav {
+    font-size: 15;
+    font-family: 'IBM Plex Mono', monospace;
+    background-color: rgb(211, 232, 211);
+    padding: 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.menu {
+    position: relative;
+}
+
+.menu-link {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.image {
+    width: 100%
+}
+
+.menu-dropdown {
+    width: 91rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 10px;
+    background-color: rgb(101, 184, 101);
+    padding: 10px;
+    position: absolute;
+    left: -10px;
+    min-width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+@media (max-width: 600px) {
+    .menu-dropdown {
+        width: 50vw;
+    }
+}
+
+.menu:hover .menu-dropdown {
+    opacity: 1;
+}
+
+.menu-dropdown a {
+    width: 7em;
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+    background-color: green;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-dropdown a:hover {
+    text-decoration: underline;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 400px;
+}
+
+nav a {
+    color: black
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+#overview {
+    font-style: bold;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'IBM Plex Mono', monospace;
+    font-style: bold;
+    font-size: 40px;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-style: bold;
+}
+
+.highlight {
+    background: rgb(101, 184, 101)
+}
+
+.red {
+    color: rgb(88, 44, 44)
+}
+
+footer {
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    color: rgb(183, 183, 183)
+}
